@@ -230,6 +230,16 @@ Call order: **vision_extract** → **trend_detect** → **trend_estimate** (for 
 
 ---
 
+## What's next
+
+Possible extensions to make TrendSignal more data-driven and topic-specific:
+
+- **YouTube Data API** — Use the [YouTube Data API v3](https://developers.google.com/youtube/v3) to pull real search/trends data (e.g. `search.list`, `videos.list` by region/category). Replace or augment vision-only heuristics with actual view counts, upload dates, and engagement so trend strength and “who’s winning” are based on real metrics.
+- **Trending topics without screenshot** — Support a text-only mode: user asks "what's trending?" or "trending in tech" and the agent answers using the YouTube Data API (e.g. trending videos by region/category) so they get trending topics and suggestions **without uploading a screenshot**.
+- **Topic-specific suggestions** — Let the user request a **topic** (e.g. “AI”, “fitness”, “cooking”). Use the API (or vision on a topic-filtered feed) to return suggestions **specific to that topic**: trending angles, top creators in that niche, and 5 hooks tailored to the requested topic instead of only what’s visible in a single screenshot.
+
+---
+
 ## Optional env vars
 
 - `OPENAI_VISION_MODEL` — Vision model (default: `gpt-4o`).
