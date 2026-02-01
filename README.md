@@ -30,13 +30,9 @@ Upload a screenshot of the YouTube homepage → get **trending topic**, **why it
 
 To display the screenshots above, add `input-screenshot.png` (YouTube homepage) and `output-insight.png` (analyzer result) under `readme-assets/`. See `readme-assets/README.md`.
 
-**Demo video:**
+**Demo video:** *(animated GIF so it shows in README preview and on GitHub)*
 
-<video src="readme-assets/ai-yt-trend-analyser.mp4" controls width="640">
-  <a href="readme-assets/ai-yt-trend-analyser.mp4">▶ Open demo video</a>
-</video>
-
-![TrendSignal demo](readme-assets/ai-yt-trend-analyser.mp4)
+![TrendSignal demo](readme-assets/demo.gif)
 
 ---
 
