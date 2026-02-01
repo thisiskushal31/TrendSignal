@@ -1,0 +1,25 @@
+# Optional: expose via Ingress (adjust host and ingress class for your cluster)
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: trend-signal
+  annotations:
+    # kubernetes.io/ingress.class: nginx
+    # cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: trend-signal.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: trend-signal
+                port:
+                  number: 80
+  # tls:
+  #   - hosts:
+  #       - trend-signal.example.com
+  #     secretName: trend-signal-tls

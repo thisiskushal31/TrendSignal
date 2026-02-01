@@ -1,0 +1,1 @@
+# TrendSignal — app package

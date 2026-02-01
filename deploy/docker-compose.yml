@@ -1,0 +1,14 @@
+# TrendSignal — run API locally with Docker
+# From repo root: docker compose -f deploy/docker-compose.yml up --build
+# Then open http://localhost:8001
+# Loads .env from app/ (or repo root ../.env if you prefer)
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "8001:8001"
+    env_file:
+      - ../app/.env
+    restart: unless-stopped

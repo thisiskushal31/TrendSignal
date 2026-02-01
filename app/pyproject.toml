@@ -1,0 +1,23 @@
+[project]
+name = "trend-signal"
+version = "0.1.0"
+description = "TrendSignal — AI-powered YouTube trend analyzer from a screenshot (MCP, FastAPI)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.0",
+    "openai>=1.0",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "python-multipart>=0.0.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "httpx"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
