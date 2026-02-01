@@ -1,6 +1,6 @@
 # TrendSignal
 
-Upload a screenshot of the YouTube homepage → get **trending topic**, **why it’s trending**, **who’s winning**, **how to post**, and **5 copyable short-form hooks**. Built as a 2-day MVP: stateless, MCP-based, AI does all reasoning.
+**AI agent** that analyzes a YouTube homepage screenshot → **trending topic**, **why it’s trending**, **who’s winning**, **how to post**, and **5 copyable short-form hooks**. Stateless, MCP-based; built for creators and portfolios.
 
 ---
 

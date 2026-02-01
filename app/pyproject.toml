@@ -1,7 +1,7 @@
 [project]
 name = "trend-signal"
 version = "0.1.0"
-description = "TrendSignal — AI-powered YouTube trend analyzer from a screenshot (MCP, FastAPI)"
+description = "TrendSignal — AI agent: YouTube trend analyzer from a screenshot (MCP, FastAPI)"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
